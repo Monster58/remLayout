@@ -1,0 +1,8 @@
+.adaptMinxin(@index) when(@index > 0){
+  @media (min-width: extract(@adaptDeviceList,@index)){
+    html{
+      font-size: @baseFontSize / @psdWidth * extract(@adaptDeviceList,@index);
+    }
+  }
+  .adaptMinxin(@index - 1);
+}

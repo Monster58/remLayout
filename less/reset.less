@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  font-size:14px;
+  font-family: "Microsoft YaHei",sans-serif;
+  color: #333;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+input,textarea{
+  border: none;
+  outline: none;
+  resize: none;
+  -webkit-appearance: none;
+}
+.f_left{
+  float: left;
+}
+.f_rigth{
+  float:right;
+}
+.clearFix::before,
+.clearFix::after{
+  content: "";
+  display: block;
+  //visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+//版心
+.sn_container{
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 90rem/@baseFontSize;
+  padding-bottom: 100rem/@baseFontSize;
+}
